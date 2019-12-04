@@ -1,0 +1,91 @@
+%Declaramos la clase de documento
+\documentclass[12pt, letterpaper]{article}
+
+%Paquetes de idioma y codificación de caracteres
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+%Otros paquetes
+\usepackage{graphicx}
+
+%Dimensiones del Documento
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\renewcommand{\labelitemi}{$-$}
+\renewcommand{\labelitemi}{$\cdot$}
+
+
+
+\begin{document}
+
+\title{Caratula}
+
+\begin{titlepage}
+	\begin{center}
+		\large{UNIVERSIDAD PRIVADA DE TACNA}\\
+
+		\vspace*{-0.025in}
+			\begin{figure}[htb]
+				\begin{center}
+					\includegraphics[width=8cm]{./Imagenes/LogoUpt}
+				\end{center}
+			\end{figure}
+
+		\vspace*{0.15in}
+		INGENIERIA DE SISTEMAS  \\
+
+		\vspace*{0.5in}
+			\begin{large}
+			TITULO:\\
+			\end{large}
+
+		\vspace*{0.1in}
+			\begin{large}
+				\textbf{Informe de Laboratorio 7} \\
+				\textbf{Instalación de una Instancia de Microsoft SQL Server} \\
+			\end{large}
+
+		\vspace*{0.3in}
+			\begin{large}
+				\textbf{CURSO:} \\
+			\end{large}
+
+		\vspace*{0.1in}
+			\begin{large}
+				Base De Datos II \\
+			\end{large}
+
+		\vspace*{0.3in}
+			\begin{large}
+				\textbf{DOCENTE:} \\
+			\end{large}
+
+		\vspace*{0.1in}
+			\begin{large}
+				Ing. Patrick Cuadros Quiroga \\
+			\end{large}
+
+		\vspace*{0.2in}
+			\vspace*{0.1in}
+				\begin{large}
+					Integrantes: \\
+					\begin{flushleft}
+						Huillca Umpiri, Willian Arturo	\hfill	(2015053793) \\
+					\end{flushleft}
+				\end{large}
+	\end{center}
+\end{titlepage}
+
+\tableofcontents %para el índice
+	\thispagestyle{empty} %para el índice sin numero
+		\newpage
+			\setcounter{page}{1}%reiniciar contador de paginas despues del indice
+				\include{Secciones/Actividad01}
+				\include{Secciones/Actividad02}
+				\include{Secciones/Actividad03}
+				
+\end{document}
